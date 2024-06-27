@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de Equilibrio de Particulas</h1>
+    </header>
+    <main>
+        <span id="advertencia"> 🚧 Esta calculadora hará el calculo de particulas sólidas 🚧</span>
+        <p>
+            Es un sistema de grua que desea cargar un cuerpo de la medida que se le ingrese, el sistema de grua
+            calculará el equilibrio de la particula y mostrará si es posible cargarla o no.
+        </p>
+        <img src="grua.jpg" width="1000px" alt="">
+        <form action="" onsubmit="event.preventDefault(); calcularCarga();">
+            <div>
+                <label for="peso">Ingresar peso (kg)</label>
+                <input type="text" id="peso" placeholder="Peso">
+            </div>
+            <div>
+                <label for="angulo">Ingrese el Ángulo de inclinación °C</label>
+                <input type="text" id="angulo" placeholder="Ángulo de inclinación">
+            </div>
+            <div>
+                <label for="distancia">Ingrese Distancia de polea (metros)</label>
+                <input type="text" placeholder="Distancia de la Polea" id="distancia">
+            </div>
+            <button type="submit" id="btn">Calcular</button>
+        </form>
+        <!-- Modal Structure -->
+        <div id="modalAlerta" style="display: none;">
+            <div id="modalContent">
+                <span id="closeModal" onclick="cerrarModal()">&times;</span>
+                <p id="modalMessage"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Hecho por Brahian Andrés Agudelo</span>
+    </footer>
+    <script src="code.js"></script>
+</body>
+
+</html>
