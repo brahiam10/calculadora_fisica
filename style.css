@@ -78,6 +78,16 @@ body {
           width: 500px;
           padding: 1rem;
         }
+        #trabajo{
+          background-color: rgba(0, 0, 255, 0.223);
+        }
+        #angulo1{
+          background-color: rgba(0, 255, 0, 0.223);
+        
+        }
+        #angulo2{
+          background-color: rgba(255, 0, 0, 0.223);
+        }
       }
       button {
         cursor: pointer;
